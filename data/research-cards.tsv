@@ -1,0 +1,17 @@
+project	header	meta	description	image	link
+elevcan	PeerJ Paper	Publication	Lung cancer incidence decreases with elevation: evidence for oxygen as an inhaled carcinogen.	peerj.png	https://dx.doi.org/10.7717/peerj.705
+elevcan	PeerJ Blog Post	Author Interview	Comments on the research and experience publishing with PeerJ.	PeerJ-blog-post-cover.jpg	http://blog.peerj.com/post/108070424253/author-interview-simeonov-himmelstein
+elevcan	SciShow Episode	Video Summary	TODO	SciShow_LOGO_part_copy.png	https://youtu.be/HrIrB9reWwQ?t=1m29s
+elevcan	Project GitHub	Code Repository	The project GitHub contains the complete data, code, and results for this study.	octocat.jpg	https://github.com/dhimmel/elevcan
+elevcan	Introduction & Visualization	Personal Blog Post	TODO	scatterplot.jpg	http://blog.dhimmel.com/elevation-and-lung-cancer/
+elevcan	Response to Cancer Research UK	Personal Blog Post	TODO	smoking-scatterplot.png	http://blog.dhimmel.com/cruk-reassessment/
+elevcan	Project Summary	Press Release	Can inhaled oxygen cause cancer? Lung cancer rates fall dramatically with increasing elevation in the western US	eurekalert.jpg	http://eurekalert.org/e/64Wk
+drug-repurposing	ThinkLab Project	Collaborative Open Science	Repurposing drugs on a heterogeneous network	thinklab.png	http://thinklab.com/p/rephetio
+disease-genes	bioRxiv Manuscript	PrePrint	Heterogeneous Network Edge Prediction: A Data Integration Approach to Prioritize Disease-Associated Genes	biorxiv.png	https://dx.doi.org/10.1101/011569
+disease-genes	Prediction Browser	Project Website	Disease-Associated Gene Browser: view predictions and performance assessments.	browser.png	http://het.io/disease-genes/browse/
+disease-genes	Biomedical Computation Review	Review Article	Unlocking the Genetics of Complex Diseases: GWAS and Beyond	bcr-cover-square.jpg	http://biomedicalcomputationreview.org/content/unlocking-genetics-complex-diseases-gwas-and-beyond
+disease-genes	Poster from ASHG 2014	Poster	Heterogeneous network link prediction prioritizes disease-associated genes	poster.jpg	http://f1000.com/posters/browse/summary/1097367
+disease-genes	Project GitHub	Code Repository	A python module for heterogeneous networks.	octocat.jpg	https://github.com/dhimmel/hetio
+epistasis	BioData Mining Paper	Publication	Evolving hard problems: Generating human genetics datasets with a complex etiology.	biodata-mining.jpg	https://dx.doi.org/10.1186/1756-0381-4-21
+epistasis	Dataset Downloads	Project Website	Evolving hard problems: Generating human genetics datasets with a complex etiology.	datasets.png	http://discovery.dartmouth.edu/model_free_data/
+epistasis	Pacific Symposium on Biocomputing Paper	Publication	Enabling personal genomics with an explicit test of epistasis.	explicit-test.png	https://dx.doi.org/10.1142/9789814295291_0035

@@ -1,0 +1,18 @@
+<div class="ui main menu inverted">
+  <div class="container">
+	<a href="" class="brand item">dhimmel.com</a>
+	<a class="item" href="/">Home</a>
+	<a class="item" href="/about">About</a>
+	<div class="ui pointing simple dropdown link item">
+		<i class="dropdown icon"></i>
+        <span class="text">Research</span>
+		<div class="menu">
+		  {% for project in projects %}
+	      <a class="item" href="/research/{{project.project}}">{{project.short}}</a>
+	      {% endfor %}
+	    </div>
+	</div>
+	<a class="item" href="//blog.dhimmel.com">Blog</a>
+  </div>
+</div>
+

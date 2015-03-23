@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+
+<div class="ui cards">
+  {% for card in cards %}
+  <div class="card">
+    <a class="image">
+      <img src="media/{{card.image}}">
+    </a>
+    <div class="content">
+      <a class="header" href="{{card.link}}">{{card.header}}</a>
+      <div class="meta">
+        <a href="{{card.link}}">{{card.meta}}</a>
+      </div>
+      <div class="description">
+        {{card.description}}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
