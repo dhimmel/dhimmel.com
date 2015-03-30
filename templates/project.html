@@ -3,6 +3,15 @@
 
 {% block content %}
 
+<h2 class="ui horizontal header divider">
+  {{project.short}}
+</h2>
+<p>{{project.description}}</p>
+
+<h2 class="ui horizontal header divider">
+  External Project Resources
+</h2>
+
 <div class="ui cards">
   {% for card in cards %}
   <div class="card">

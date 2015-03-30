@@ -1,4 +1,4 @@
-project	short	title	description	image
+project_id	short	title	description	image
 drug-repurposing	Drug Repurposing	Uncovering new uses for drugs	Multiscale data integration using heterogeneous networks to predict drug indications	
 disease-genes	Disease-Associated Genes	Uncovering disease-associated genes	Multiscale data integration using heterogeneous networks to predict genes that confer genetic succesptibility to disease	
 elevcan	Elevation & Cancer Incidence			
