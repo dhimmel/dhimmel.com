@@ -1,18 +1,20 @@
-<div class="ui main menu inverted">
-  <div class="container">
+<div class="ui sidebar inverted vertical menu visible">
 	<a href="" class="brand item">dhimmel.com</a>
 	<a class="item" href="/">Home</a>
 	<a class="item" href="/about">About</a>
-	<div class="ui pointing simple dropdown link item">
-		<i class="dropdown icon"></i>
-        <span class="text">Research</span>
+	<div class="ui item">
+    <span class="header">Research</span>
 		<div class="menu">
-		  {% for project in projects %}
-	      <a class="item" href="/research/{{project.project_id}}">{{project.short}}</a>
-	      {% endfor %}
-	    </div>
+	  {% for project in projects %}
+      <a class="item" href="/research/{{project.project_id}}">{{project.short}}</a>
+    {% endfor %}
+    </div>
 	</div>
 	<a class="item" href="//blog.dhimmel.com">Blog</a>
-  </div>
 </div>
 
+<script>
+$('.ui.sidebar')
+  .sidebar('toggle')
+;
+</script>

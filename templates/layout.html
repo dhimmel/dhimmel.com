@@ -8,28 +8,28 @@
 <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css">
 
+{% block head %}
+{% endblock %}
+
 </head>
 
 <body>
 
+{% include 'menu.html' %}
+
 <main class="ui page grid">
-  <div class="row">
-    <div class="column">
-
-    {% include 'menu.html' %}
-
+  <div class="ui one column center aligned grid">
     {% block content %}
     {% endblock %}
-    </div>
   </div>
 </main>
+
+{% block outside %}
+{% endblock %}
 
 <script src="/lib/jquery-3.1.0.min.js"></script>
 <script src="/lib/semantic.js"></script>
 <script src="/lib/components/dropdown.js"></script>
-<script type="text/javascript">
-  $('.ui.dropdown').dropdown();
-</script>
 
 </body>
 </html>
