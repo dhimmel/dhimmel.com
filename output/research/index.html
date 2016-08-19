@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>{{project_id}}</title>
+<title></title>
 
 <link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
 <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
@@ -16,10 +16,28 @@
   <div class="row">
     <div class="column">
 
-    {% include 'menu.html' %}
+    <div class="ui main menu inverted">
+  <div class="container">
+	<a href="" class="brand item">dhimmel.com</a>
+	<a class="item" href="/">Home</a>
+	<a class="item" href="/about">About</a>
+	<div class="ui pointing simple dropdown link item">
+		<i class="dropdown icon"></i>
+        <span class="text">Research</span>
+		<div class="menu">
+		  
+	    </div>
+	</div>
+	<a class="item" href="//blog.dhimmel.com">Blog</a>
+  </div>
+</div>
 
-    {% block content %}
-    {% endblock %}
+
+    
+
+  <h3>This is the start of my child template</h3>
+
+
     </div>
   </div>
 </main>
@@ -33,4 +51,3 @@
 
 </body>
 </html>
-
