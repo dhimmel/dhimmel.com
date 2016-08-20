@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>elevcan</title>
+  <meta charset="UTF-8">
+  <title>elevcan</title>
 
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
+  <!-- <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css"> -->
 
-
-
+  
+  
 
 </head>
 
-<body>
+<body class="pushable">
 
-<div class="ui sidebar inverted vertical menu visible">
+<!-- menu sidebar -->
+<div class="ui left vertical inverted labeled sidebar menu">
 	<a href="" class="brand item">dhimmel.com</a>
 	<a class="item" href="/">Home</a>
 	<a class="item" href="/about">About</a>
@@ -38,15 +39,16 @@
 	<a class="item" href="//blog.dhimmel.com">Blog</a>
 </div>
 
-<script>
-$('.ui.sidebar')
-  .sidebar('toggle')
-;
-</script>
+<div class="pusher" id="page-background">
 
+  <div class="ui black huge launch right attached button">
+    <i class="icon list layout"></i>
+    <span class="text" style="display:none;">Menu</span>
+  </div>
+  
+  
 <main class="ui page grid">
   <div class="ui one column center aligned grid">
-    
 
 <h2 class="ui horizontal header divider">
   Elevation & Cancer Incidence
@@ -57,122 +59,147 @@ $('.ui.sidebar')
   External Project Resources
 </h2>
 
-<div class="ui cards">
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/peerj.png">
-    </a>
-    <div class="content">
-      <a class="header" href="https://dx.doi.org/10.7717/peerj.705">PeerJ Paper</a>
-      <div class="meta">
-        <a href="https://dx.doi.org/10.7717/peerj.705">Publication</a>
-      </div>
-      <div class="description">
-        Lung cancer incidence decreases with elevation: evidence for oxygen as an inhaled carcinogen.
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/PeerJ-blog-post-cover.jpg">
-    </a>
-    <div class="content">
-      <a class="header" href="http://blog.peerj.com/post/108070424253/author-interview-simeonov-himmelstein">PeerJ Blog Post</a>
-      <div class="meta">
-        <a href="http://blog.peerj.com/post/108070424253/author-interview-simeonov-himmelstein">Author Interview</a>
-      </div>
-      <div class="description">
-        Comments on the research and experience publishing with PeerJ.
+  <div class="ui cards">
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/peerj.png">
+      </a>
+      <div class="content">
+        <a class="header" href="https://dx.doi.org/10.7717/peerj.705">PeerJ Paper</a>
+        <div class="meta">
+          <a href="https://dx.doi.org/10.7717/peerj.705">Publication</a>
+        </div>
+        <div class="description">
+          Lung cancer incidence decreases with elevation: evidence for oxygen as an inhaled carcinogen.
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/SciShow_LOGO_part_copy.png">
-    </a>
-    <div class="content">
-      <a class="header" href="https://youtu.be/HrIrB9reWwQ?t=1m29s">SciShow Episode</a>
-      <div class="meta">
-        <a href="https://youtu.be/HrIrB9reWwQ?t=1m29s">Video Summary</a>
-      </div>
-      <div class="description">
-        TODO
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/octocat.jpg">
-    </a>
-    <div class="content">
-      <a class="header" href="https://github.com/dhimmel/elevcan">Project GitHub</a>
-      <div class="meta">
-        <a href="https://github.com/dhimmel/elevcan">Code Repository</a>
-      </div>
-      <div class="description">
-        The project GitHub contains the complete data, code, and results for this study.
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/PeerJ-blog-post-cover.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="http://blog.peerj.com/post/108070424253/author-interview-simeonov-himmelstein">PeerJ Blog Post</a>
+        <div class="meta">
+          <a href="http://blog.peerj.com/post/108070424253/author-interview-simeonov-himmelstein">Author Interview</a>
+        </div>
+        <div class="description">
+          Comments on the research and experience publishing with PeerJ.
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/scatterplot.jpg">
-    </a>
-    <div class="content">
-      <a class="header" href="http://blog.dhimmel.com/elevation-and-lung-cancer/">Introduction & Visualization</a>
-      <div class="meta">
-        <a href="http://blog.dhimmel.com/elevation-and-lung-cancer/">Personal Blog Post</a>
-      </div>
-      <div class="description">
-        TODO
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/smoking-scatterplot.png">
-    </a>
-    <div class="content">
-      <a class="header" href="http://blog.dhimmel.com/cruk-reassessment/">Response to Cancer Research UK</a>
-      <div class="meta">
-        <a href="http://blog.dhimmel.com/cruk-reassessment/">Personal Blog Post</a>
-      </div>
-      <div class="description">
-        TODO
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/SciShow_LOGO_part_copy.png">
+      </a>
+      <div class="content">
+        <a class="header" href="https://youtu.be/HrIrB9reWwQ?t=1m29s">SciShow Episode</a>
+        <div class="meta">
+          <a href="https://youtu.be/HrIrB9reWwQ?t=1m29s">Video Summary</a>
+        </div>
+        <div class="description">
+          TODO
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/eurekalert.jpg">
-    </a>
-    <div class="content">
-      <a class="header" href="http://eurekalert.org/e/64Wk">Project Summary</a>
-      <div class="meta">
-        <a href="http://eurekalert.org/e/64Wk">Press Release</a>
-      </div>
-      <div class="description">
-        Can inhaled oxygen cause cancer? Lung cancer rates fall dramatically with increasing elevation in the western US
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/octocat.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="https://github.com/dhimmel/elevcan">Project GitHub</a>
+        <div class="meta">
+          <a href="https://github.com/dhimmel/elevcan">Code Repository</a>
+        </div>
+        <div class="description">
+          The project GitHub contains the complete data, code, and results for this study.
+        </div>
       </div>
     </div>
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/scatterplot.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="http://blog.dhimmel.com/elevation-and-lung-cancer/">Introduction & Visualization</a>
+        <div class="meta">
+          <a href="http://blog.dhimmel.com/elevation-and-lung-cancer/">Personal Blog Post</a>
+        </div>
+        <div class="description">
+          TODO
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/smoking-scatterplot.png">
+      </a>
+      <div class="content">
+        <a class="header" href="http://blog.dhimmel.com/cruk-reassessment/">Response to Cancer Research UK</a>
+        <div class="meta">
+          <a href="http://blog.dhimmel.com/cruk-reassessment/">Personal Blog Post</a>
+        </div>
+        <div class="description">
+          TODO
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/eurekalert.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="http://eurekalert.org/e/64Wk">Project Summary</a>
+        <div class="meta">
+          <a href="http://eurekalert.org/e/64Wk">Press Release</a>
+        </div>
+        <div class="description">
+          Can inhaled oxygen cause cancer? Lung cancer rates fall dramatically with increasing elevation in the western US
+        </div>
+      </div>
+    </div>
+    
   </div>
+</div>
+</main>
+
+
   
 </div>
 
 
-  </div>
-</main>
+
 
 <script src="/lib/jquery-3.1.0.min.js"></script>
 <script src="/lib/semantic.js"></script>
-<script src="/lib/components/dropdown.js"></script>
+<!-- <script src="/lib/components/dropdown.js"></script> -->
+
+
+<script>
+// From http://jsfiddle.net/hwc9sLb9/
+$(".launch.button").mouseenter(function() {
+  $(this).stop().animate({
+      width: '150px'
+    }, 300,
+    function() {
+      $(this).find('.text').show();
+    });
+}).mouseleave(function(event) {
+  $(this).find('.text').hide();
+  $(this).stop().animate({
+    width: '70px'
+  }, 300);
+});
+$(".ui.sidebar").sidebar().sidebar('attach events', '.ui.launch.button');
+</script>
 
 </body>
+
 </html>

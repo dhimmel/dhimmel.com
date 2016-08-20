@@ -20,7 +20,7 @@
   font-size: 50px;
   letter-spacing: 2px;
   color: #fff;
-  text-shadow: 0 0 30px #FFFFFF;
+  /*text-shadow: 0 0 30px #FFFFFF;*/
   margin: 15px auto 15px auto;
 }
 
@@ -53,7 +53,9 @@
   <div class="ui one column center aligned grid">
 
 <div class="column ten wide nametag-holder">
-  <h1 class="center aligned header nametag-head">Dr. Daniel Himmelstein</h1>
+  <h1 class="center aligned header nametag-head">
+    {% for letter in shadow_info %}<span style="text-shadow: 0 0 30px {{letter.color}};">{{letter.letter}}</span>{% endfor %}
+  </h1>
   <p class="center aligned nametag-text"><i>digital craftsman of the biodata revolution</i></p>
 </div>
 

@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>epistasis</title>
+  <meta charset="UTF-8">
+  <title>epistasis</title>
 
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
+  <!-- <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css"> -->
 
-
-
+  
+  
 
 </head>
 
-<body>
+<body class="pushable">
 
-<div class="ui sidebar inverted vertical menu visible">
+<!-- menu sidebar -->
+<div class="ui left vertical inverted labeled sidebar menu">
 	<a href="" class="brand item">dhimmel.com</a>
 	<a class="item" href="/">Home</a>
 	<a class="item" href="/about">About</a>
@@ -38,15 +39,16 @@
 	<a class="item" href="//blog.dhimmel.com">Blog</a>
 </div>
 
-<script>
-$('.ui.sidebar')
-  .sidebar('toggle')
-;
-</script>
+<div class="pusher" id="page-background">
 
+  <div class="ui black huge launch right attached button">
+    <i class="icon list layout"></i>
+    <span class="text" style="display:none;">Menu</span>
+  </div>
+  
+  
 <main class="ui page grid">
   <div class="ui one column center aligned grid">
-    
 
 <h2 class="ui horizontal header divider">
   Complex Genetics & Epistatis
@@ -57,62 +59,87 @@ $('.ui.sidebar')
   External Project Resources
 </h2>
 
-<div class="ui cards">
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/biodata-mining.jpg">
-    </a>
-    <div class="content">
-      <a class="header" href="https://dx.doi.org/10.1186/1756-0381-4-21">BioData Mining Paper</a>
-      <div class="meta">
-        <a href="https://dx.doi.org/10.1186/1756-0381-4-21">Publication</a>
-      </div>
-      <div class="description">
-        Evolving hard problems: Generating human genetics datasets with a complex etiology.
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/datasets.png">
-    </a>
-    <div class="content">
-      <a class="header" href="http://discovery.dartmouth.edu/model_free_data/">Dataset Downloads</a>
-      <div class="meta">
-        <a href="http://discovery.dartmouth.edu/model_free_data/">Project Website</a>
-      </div>
-      <div class="description">
-        Evolving hard problems: Generating human genetics datasets with a complex etiology.
+  <div class="ui cards">
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/biodata-mining.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="https://dx.doi.org/10.1186/1756-0381-4-21">BioData Mining Paper</a>
+        <div class="meta">
+          <a href="https://dx.doi.org/10.1186/1756-0381-4-21">Publication</a>
+        </div>
+        <div class="description">
+          Evolving hard problems: Generating human genetics datasets with a complex etiology.
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/explicit-test.png">
-    </a>
-    <div class="content">
-      <a class="header" href="https://dx.doi.org/10.1142/9789814295291_0035">Pacific Symposium on Biocomputing Paper</a>
-      <div class="meta">
-        <a href="https://dx.doi.org/10.1142/9789814295291_0035">Publication</a>
-      </div>
-      <div class="description">
-        Enabling personal genomics with an explicit test of epistasis.
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/datasets.png">
+      </a>
+      <div class="content">
+        <a class="header" href="http://discovery.dartmouth.edu/model_free_data/">Dataset Downloads</a>
+        <div class="meta">
+          <a href="http://discovery.dartmouth.edu/model_free_data/">Project Website</a>
+        </div>
+        <div class="description">
+          Evolving hard problems: Generating human genetics datasets with a complex etiology.
+        </div>
       </div>
     </div>
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/explicit-test.png">
+      </a>
+      <div class="content">
+        <a class="header" href="https://dx.doi.org/10.1142/9789814295291_0035">Pacific Symposium on Biocomputing Paper</a>
+        <div class="meta">
+          <a href="https://dx.doi.org/10.1142/9789814295291_0035">Publication</a>
+        </div>
+        <div class="description">
+          Enabling personal genomics with an explicit test of epistasis.
+        </div>
+      </div>
+    </div>
+    
   </div>
+</div>
+</main>
+
+
   
 </div>
 
 
-  </div>
-</main>
+
 
 <script src="/lib/jquery-3.1.0.min.js"></script>
 <script src="/lib/semantic.js"></script>
-<script src="/lib/components/dropdown.js"></script>
+<!-- <script src="/lib/components/dropdown.js"></script> -->
+
+
+<script>
+// From http://jsfiddle.net/hwc9sLb9/
+$(".launch.button").mouseenter(function() {
+  $(this).stop().animate({
+      width: '150px'
+    }, 300,
+    function() {
+      $(this).find('.text').show();
+    });
+}).mouseleave(function(event) {
+  $(this).find('.text').hide();
+  $(this).stop().animate({
+    width: '70px'
+  }, 300);
+});
+$(".ui.sidebar").sidebar().sidebar('attach events', '.ui.launch.button');
+</script>
 
 </body>
+
 </html>

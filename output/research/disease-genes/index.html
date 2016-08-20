@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>disease-genes</title>
+  <meta charset="UTF-8">
+  <title>disease-genes</title>
 
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
+  <!-- <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css"> -->
 
-
-
+  
+  
 
 </head>
 
-<body>
+<body class="pushable">
 
-<div class="ui sidebar inverted vertical menu visible">
+<!-- menu sidebar -->
+<div class="ui left vertical inverted labeled sidebar menu">
 	<a href="" class="brand item">dhimmel.com</a>
 	<a class="item" href="/">Home</a>
 	<a class="item" href="/about">About</a>
@@ -38,15 +39,16 @@
 	<a class="item" href="//blog.dhimmel.com">Blog</a>
 </div>
 
-<script>
-$('.ui.sidebar')
-  .sidebar('toggle')
-;
-</script>
+<div class="pusher" id="page-background">
 
+  <div class="ui black huge launch right attached button">
+    <i class="icon list layout"></i>
+    <span class="text" style="display:none;">Menu</span>
+  </div>
+  
+  
 <main class="ui page grid">
   <div class="ui one column center aligned grid">
-    
 
 <h2 class="ui horizontal header divider">
   Disease-Associated Genes
@@ -57,92 +59,117 @@ $('.ui.sidebar')
   External Project Resources
 </h2>
 
-<div class="ui cards">
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/biorxiv.png">
-    </a>
-    <div class="content">
-      <a class="header" href="https://dx.doi.org/10.1101/011569">bioRxiv Manuscript</a>
-      <div class="meta">
-        <a href="https://dx.doi.org/10.1101/011569">PrePrint</a>
-      </div>
-      <div class="description">
-        Heterogeneous Network Edge Prediction: A Data Integration Approach to Prioritize Disease-Associated Genes
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/browser.png">
-    </a>
-    <div class="content">
-      <a class="header" href="http://het.io/disease-genes/browse/">Prediction Browser</a>
-      <div class="meta">
-        <a href="http://het.io/disease-genes/browse/">Project Website</a>
-      </div>
-      <div class="description">
-        Disease-Associated Gene Browser: view predictions and performance assessments.
+  <div class="ui cards">
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/biorxiv.png">
+      </a>
+      <div class="content">
+        <a class="header" href="https://dx.doi.org/10.1101/011569">bioRxiv Manuscript</a>
+        <div class="meta">
+          <a href="https://dx.doi.org/10.1101/011569">PrePrint</a>
+        </div>
+        <div class="description">
+          Heterogeneous Network Edge Prediction: A Data Integration Approach to Prioritize Disease-Associated Genes
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/bcr-cover-square.jpg">
-    </a>
-    <div class="content">
-      <a class="header" href="http://biomedicalcomputationreview.org/content/unlocking-genetics-complex-diseases-gwas-and-beyond">Biomedical Computation Review</a>
-      <div class="meta">
-        <a href="http://biomedicalcomputationreview.org/content/unlocking-genetics-complex-diseases-gwas-and-beyond">Review Article</a>
-      </div>
-      <div class="description">
-        Unlocking the Genetics of Complex Diseases: GWAS and Beyond
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/poster.jpg">
-    </a>
-    <div class="content">
-      <a class="header" href="http://f1000.com/posters/browse/summary/1097367">Poster from ASHG 2014</a>
-      <div class="meta">
-        <a href="http://f1000.com/posters/browse/summary/1097367">Poster</a>
-      </div>
-      <div class="description">
-        Heterogeneous network link prediction prioritizes disease-associated genes
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/browser.png">
+      </a>
+      <div class="content">
+        <a class="header" href="http://het.io/disease-genes/browse/">Prediction Browser</a>
+        <div class="meta">
+          <a href="http://het.io/disease-genes/browse/">Project Website</a>
+        </div>
+        <div class="description">
+          Disease-Associated Gene Browser: view predictions and performance assessments.
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="card">
-    <a class="image">
-      <img src="media/octocat.jpg">
-    </a>
-    <div class="content">
-      <a class="header" href="https://github.com/dhimmel/hetio">Project GitHub</a>
-      <div class="meta">
-        <a href="https://github.com/dhimmel/hetio">Code Repository</a>
-      </div>
-      <div class="description">
-        A python module for heterogeneous networks.
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/bcr-cover-square.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="http://biomedicalcomputationreview.org/content/unlocking-genetics-complex-diseases-gwas-and-beyond">Biomedical Computation Review</a>
+        <div class="meta">
+          <a href="http://biomedicalcomputationreview.org/content/unlocking-genetics-complex-diseases-gwas-and-beyond">Review Article</a>
+        </div>
+        <div class="description">
+          Unlocking the Genetics of Complex Diseases: GWAS and Beyond
+        </div>
       </div>
     </div>
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/poster.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="http://f1000.com/posters/browse/summary/1097367">Poster from ASHG 2014</a>
+        <div class="meta">
+          <a href="http://f1000.com/posters/browse/summary/1097367">Poster</a>
+        </div>
+        <div class="description">
+          Heterogeneous network link prediction prioritizes disease-associated genes
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <a class="image">
+        <img src="media/octocat.jpg">
+      </a>
+      <div class="content">
+        <a class="header" href="https://github.com/dhimmel/hetio">Project GitHub</a>
+        <div class="meta">
+          <a href="https://github.com/dhimmel/hetio">Code Repository</a>
+        </div>
+        <div class="description">
+          A python module for heterogeneous networks.
+        </div>
+      </div>
+    </div>
+    
   </div>
+</div>
+</main>
+
+
   
 </div>
 
 
-  </div>
-</main>
+
 
 <script src="/lib/jquery-3.1.0.min.js"></script>
 <script src="/lib/semantic.js"></script>
-<script src="/lib/components/dropdown.js"></script>
+<!-- <script src="/lib/components/dropdown.js"></script> -->
+
+
+<script>
+// From http://jsfiddle.net/hwc9sLb9/
+$(".launch.button").mouseenter(function() {
+  $(this).stop().animate({
+      width: '150px'
+    }, 300,
+    function() {
+      $(this).find('.text').show();
+    });
+}).mouseleave(function(event) {
+  $(this).find('.text').hide();
+  $(this).stop().animate({
+    width: '70px'
+  }, 300);
+});
+$(".ui.sidebar").sidebar().sidebar('attach events', '.ui.launch.button');
+</script>
 
 </body>
+
 </html>
