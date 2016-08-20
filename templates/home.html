@@ -3,7 +3,7 @@
 {% block head %}
 <style>
 
-body {
+#page-background {
   background: url('/image/background.jpg') center;
   background-size: cover;
   padding: 0;
@@ -48,7 +48,10 @@ body {
 </style>
 {% endblock %}
 
-{% block content %}
+{% block main %}
+<main class="ui page grid">
+  <div class="ui one column center aligned grid">
+
 <div class="column ten wide nametag-holder">
   <h1 class="center aligned header nametag-head">Dr. Daniel Himmelstein</h1>
   <p class="center aligned nametag-text"><i>digital craftsman of the biodata revolution</i></p>
@@ -62,6 +65,9 @@ body {
     <a href="https://keybase.io/dhimmel"><img class="ui image spaced" src="/image/keybase-icon.svg" title="Keybase", alt="Keybase icon"></a>
   </div>
 </div>
+
+</div>
+</main>
 
 {% endblock %}
 

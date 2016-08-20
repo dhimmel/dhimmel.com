@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title></title>
+  <meta charset="UTF-8">
+  <title></title>
 
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
+  <!-- <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css"> -->
 
-
+  
 <style>
 
-body {
+#page-background {
   background: url('/image/background.jpg') center;
   background-size: cover;
   padding: 0;
@@ -58,9 +58,10 @@ body {
 
 </head>
 
-<body>
+<body class="pushable">
 
-<div class="ui sidebar inverted vertical menu visible">
+<!-- menu sidebar -->
+<div class="ui left vertical inverted labeled sidebar menu">
 	<a href="" class="brand item">dhimmel.com</a>
 	<a class="item" href="/">Home</a>
 	<a class="item" href="/about">About</a>
@@ -83,15 +84,17 @@ body {
 	<a class="item" href="//blog.dhimmel.com">Blog</a>
 </div>
 
-<script>
-$('.ui.sidebar')
-  .sidebar('toggle')
-;
-</script>
+<div class="pusher" id="page-background">
 
+  <div class="ui black huge launch right attached button">
+    <i class="icon list layout"></i>
+    <span class="text" style="display:none;">Menu</span>
+  </div>
+  
+  
 <main class="ui page grid">
   <div class="ui one column center aligned grid">
-    
+
 <div class="column ten wide nametag-holder">
   <h1 class="center aligned header nametag-head">Dr. Daniel Himmelstein</h1>
   <p class="center aligned nametag-text"><i>digital craftsman of the biodata revolution</i></p>
@@ -106,9 +109,12 @@ $('.ui.sidebar')
   </div>
 </div>
 
-
-  </div>
+</div>
 </main>
+
+
+  
+</div>
 
 
 <div class="bottomright"><font color="white">Photo by Steve Babuljak<font></div>
@@ -116,7 +122,27 @@ $('.ui.sidebar')
 
 <script src="/lib/jquery-3.1.0.min.js"></script>
 <script src="/lib/semantic.js"></script>
-<script src="/lib/components/dropdown.js"></script>
+<!-- <script src="/lib/components/dropdown.js"></script> -->
+
+
+<script>
+// From http://jsfiddle.net/hwc9sLb9/
+$(".launch.button").mouseenter(function() {
+  $(this).stop().animate({
+      width: '150px'
+    }, 300,
+    function() {
+      $(this).find('.text').show();
+    });
+}).mouseleave(function(event) {
+  $(this).find('.text').hide();
+  $(this).stop().animate({
+    width: '70px'
+  }, 300);
+});
+$(".ui.sidebar").sidebar().sidebar('attach events', '.ui.launch.button');
+</script>
 
 </body>
+
 </html>
