@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% set active_page = "home" %}
+
+{% block head %}
+<style>
+
+#page-background {
+  background-color: gray;
+  padding: 0;
+  margin: 0;
+}
+
+<style>
+main * {
+  font-size: 2rem;
+}
+</style>
+
+</style>
+{% endblock %}
+
+
+{% block main %}
+<main class="ui grid text container">  
+  <div class="sixteen wide column">
+    {{about}}
+  </div>
+</main>
+{% endblock %}
