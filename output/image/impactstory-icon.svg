@@ -8,7 +8,7 @@
 Created by potrace 1.13, written by Peter Selinger 2001-2015
 </metadata>
 <g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
-fill="#FFFFFF" stroke="none">
+fill="#FFFFFF" fill-opacity="0.75" stroke="none">
 <path d="M1485 3986 c-87 -22 -137 -56 -240 -162 -157 -161 -257 -219 -460
 -264 -55 -12 -122 -33 -148 -47 -99 -50 -166 -146 -193 -277 -46 -221 -96
 -312 -266 -478 -87 -86 -114 -120 -140 -175 -44 -93 -44 -177 1 -318 64 -199
