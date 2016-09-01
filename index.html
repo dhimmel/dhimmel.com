@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title></title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon"
+   href="/image/favicon.ico" />
 
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
-<link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
+  <!-- <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css"> -->
 
+  
+
+<title>Daniel Himmelstein · Scientist · Home page</title>
+<meta name="description" content="Home page of Dr. Daniel Himmelstein. Daniel is a biodata scientist at the Unviersity of Pennsylvania."/>
 
 <style>
 
-body {
+#page-background {
   background: url('/image/background.jpg') center;
   background-size: cover;
   padding: 0;
@@ -28,7 +33,7 @@ body {
   font-size: 50px;
   letter-spacing: 2px;
   color: #fff;
-  text-shadow: 0 0 30px #FFFFFF;
+  /*text-shadow: 0 0 30px #FFFFFF;*/
   margin: 15px auto 15px auto;
 }
 
@@ -58,42 +63,30 @@ body {
 
 </head>
 
-<body>
+<body class="pushable">
 
-<div class="ui sidebar inverted vertical menu visible">
+<!-- menu sidebar -->
+<div class="ui left vertical inverted labeled sidebar menu">
 	<a href="" class="brand item">dhimmel.com</a>
-	<a class="item" href="/">Home</a>
-	<a class="item" href="/about">About</a>
-	<div class="ui item">
-    <span class="header">Research</span>
-		<div class="menu">
-	  
-      <a class="item" href="/research/drug-repurposing">Drug Repurposing</a>
-    
-      <a class="item" href="/research/disease-genes">Disease-Associated Genes</a>
-    
-      <a class="item" href="/research/elevcan">Elevation & Cancer Incidence</a>
-    
-      <a class="item" href="/research/networks">Network Biology</a>
-    
-      <a class="item" href="/research/epistasis">Complex Genetics & Epistatis</a>
-    
-    </div>
-	</div>
+	<a class="item  active" href="/">Home</a>
 	<a class="item" href="//blog.dhimmel.com">Blog</a>
 </div>
 
-<script>
-$('.ui.sidebar')
-  .sidebar('toggle')
-;
-</script>
+<div class="pusher" id="page-background">
 
+  <div class="ui black huge launch right attached button">
+    <i class="icon list layout"></i>
+    <span class="text" style="display:none;">Menu</span>
+  </div>
+  
+  
 <main class="ui page grid">
   <div class="ui one column center aligned grid">
-    
+
 <div class="column ten wide nametag-holder">
-  <h1 class="center aligned header nametag-head">Dr. Daniel Himmelstein</h1>
+  <h1 class="center aligned header nametag-head">
+    <span style="text-shadow: 0 0 30px #f9fcb5;">D</span><span style="text-shadow: 0 0 30px #b81e48;">r</span><span style="text-shadow: 0 0 30px #e2514a;">.</span><span style="text-shadow: 0 0 30px #a2d9a4;"> </span><span style="text-shadow: 0 0 30px #5e4fa2;">D</span><span style="text-shadow: 0 0 30px #d23a4e;">a</span><span style="text-shadow: 0 0 30px #fff7b2;">n</span><span style="text-shadow: 0 0 30px #3585bb;">i</span><span style="text-shadow: 0 0 30px #47a0b3;">e</span><span style="text-shadow: 0 0 30px #edf8a3;">l</span><span style="text-shadow: 0 0 30px #7ecca5;"> </span><span style="text-shadow: 0 0 30px #bfe5a0;">H</span><span style="text-shadow: 0 0 30px #60bba8;">i</span><span style="text-shadow: 0 0 30px #f06744;">m</span><span style="text-shadow: 0 0 30px #fdbf6f;">m</span><span style="text-shadow: 0 0 30px #9e0142;">e</span><span style="text-shadow: 0 0 30px #fca55d;">l</span><span style="text-shadow: 0 0 30px #f7844e;">s</span><span style="text-shadow: 0 0 30px #daf09a;">t</span><span style="text-shadow: 0 0 30px #496aaf;">e</span><span style="text-shadow: 0 0 30px #fed683;">i</span><span style="text-shadow: 0 0 30px #fee999;">n</span>
+  </h1>
   <p class="center aligned nametag-text"><i>digital craftsman of the biodata revolution</i></p>
 </div>
 
@@ -103,20 +96,44 @@ $('.ui.sidebar')
     <a href="https://twitter.com/dhimmel"><img class="ui image spaced" src="/image/twitter-icon.svg" title="Twitter", alt="Twitter icon"></a>
     <a href="https://impactstory.org/u/0000-0002-3012-7446"><img class="ui image spaced" src="/image/impactstory-icon.svg" title="Impactstory", alt="Impactstory icon"></a>
     <a href="https://keybase.io/dhimmel"><img class="ui image spaced" src="/image/keybase-icon.svg" title="Keybase", alt="Keybase icon"></a>
+    <a href="https://orcid.org/0000-0002-3012-7446"><img class="ui image spaced" src="/image/orcid-icon.svg" title="ORCID", alt="ORCID icon"></a>
+    <a href="https://slides.com/dhimmel"><img class="ui image spaced" src="/image/slides-icon.svg" title="Slides", alt="Slides icon"></a>
+    <a href="https://www.youtube.com/playlist?list=PLsvIKt9wtsqNT_8ApPBadPZMRJ55zAAJt"><img class="ui image spaced" src="/image/youtube-icon.svg" title="YouTube", alt="YouTube icon"></a>
   </div>
 </div>
 
-
-  </div>
+</div>
 </main>
 
+<div class="bottomright"><font color="#d9d9d9">Photo by Steve Babuljak<font></div>
 
-<div class="bottomright"><font color="white">Photo by Steve Babuljak<font></div>
 
+  
+</div>
 
 <script src="/lib/jquery-3.1.0.min.js"></script>
 <script src="/lib/semantic.js"></script>
-<script src="/lib/components/dropdown.js"></script>
+<!-- <script src="/lib/components/dropdown.js"></script> -->
+
+
+<script>
+// From http://jsfiddle.net/hwc9sLb9/
+$(".launch.button").mouseenter(function() {
+  $(this).stop().animate({
+      width: '150px'
+    }, 300,
+    function() {
+      $(this).find('.text').show();
+    });
+}).mouseleave(function(event) {
+  $(this).find('.text').hide();
+  $(this).stop().animate({
+    width: '70px'
+  }, 300);
+});
+$(".ui.sidebar").sidebar().sidebar('attach events', '.ui.launch.button');
+</script>
 
 </body>
+
 </html>
