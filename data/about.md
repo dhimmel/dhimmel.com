@@ -10,4 +10,4 @@ Below is my biography for the 2016 Philly Geek Awards, where I [was a finalist](
 
 ## Education
 
-I'm currently a Postdoctoral Fellow in the Greene Lab at the University of Pennsylvania. Before, I received my PhD in Biological & Medical Informatics at the University of California, San Francisco. As an undergraduate, I majored in biostatistics at Cornell University and researched at Princeton University and Dartmouth Medical School over the summer.
+I'm currently a Postdoctoral Fellow in the [Greene Lab](http://www.greenelab.com "Casey Greene Lab at Penn") at the University of Pennsylvania. Before, I received my PhD in _Biological & Medical Informatics_ at the University of California, San Francisco in the [Baranzini Lab](http://baranzinilab.ucsf.edu "Sergio Baranzini Lab at UCSF"). As an undergraduate, I majored in biostatistics at Cornell University and researched at Princeton University and Dartmouth Medical School over the summer.
