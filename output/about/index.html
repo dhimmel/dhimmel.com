@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon"
+   href="/image/favicon.ico" />
+
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/semantic.css">
+  <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/card.css">
+  <!-- <link rel="stylesheet" type="text/css" class="ui" href="/lib/components/dropdown.css"> -->
+
+  
+
+<title>Daniel Himmelstein · Scientist · About</title>
+<meta name="description" content="Learn about bioinformatics researcher Daniel Himmelstein including his biography and interests."/>
+
+<style>
+
+#page-background {
+  background-color: #F9F5DE;
+  background: linear-gradient(90deg, #F8F4DA, #FFFEFC, #F9F5DE);
+  padding: 0;
+  margin: 0;
+}
+
+<style>
+main * {
+  font-size: 2rem;
+}
+</style>
+
+</style>
+
+
+</head>
+
+<body class="pushable">
+
+<!-- menu sidebar -->
+<div class="ui left vertical inverted labeled sidebar menu">
+	<a href="" class="brand item">dhimmel.com</a>
+	<a class="item " href="/">Home</a>
+  <a class="item  active" href="/about">About</a>
+	<a class="item" href="//blog.dhimmel.com">Blog</a>
+</div>
+
+<div class="pusher" id="page-background">
+
+  <div class="ui black huge launch right attached button">
+    <i class="icon list layout"></i>
+    <span class="text" style="display:none;">Menu</span>
+  </div>
+  
+  
+<main class="ui grid text container">  
+  <div class="sixteen wide column">
+    <h2>Biography du jour</h2>
+<p>Below is my biography for the 2016 Philly Geek Awards, where I <a href="http://www.phillygeekawards.com/nominees/daniel-himmelstein/" title="Daniel Himmelstein on the Philly Geek Awards Website">was a finalist</a> for <em>Scientist of the Year</em>. While I lost to <a href="http://www.chop.edu/doctors/grupp-stephan-a" title="Dr. Stephan Grupp at the Children's Hospital of Philadelphia">Stephan Grupp</a>, my biography lives on below:</p>
+<blockquote>
+<p>Daniel Himmelstein is a data scientist who teaches computers about human disease. Last November while atop a tidal island in France, Daniel announced, <a href="https://youtu.be/goIOtEpE8Lc" title="Deciding the next step after my PhD">on YouTube</a>, his plans to move from San Francisco to Philadelphia. His passion for open science and hetnets led him to the University of Pennsylvania. After self-curating a <a href="http://blog.dhimmel.com/phd-exhibit/" title="My PhD Exhibit · Satoshi Village Blog">graduation exhibit</a> on his PhD, Daniel arrived to Philly in June.</p>
+<p>That month, Daniel launched Cognoma in collaboration with the DataPhilly and Code for Philly meetups. This project puts machine learning in the hands of cancer biologists. Moreover, it's a citizen-science project that insists every contributor learns something new. Hundreds of Philadelphians have attended Cognoma meetups with 56+ involved <a href="https://github.com/cognoma/cognoma" title="Project Cognoma on GitHub">on GitHub</a>.</p>
+<p>Daniel also pioneered the field of hetnets — a term he coined in biology for networks with many types of relationships. In July, he released <a href="https://neo4j.het.io" title="Hetionet Neo4j Browser">Hetionet</a> — a hetnet that integrates the collective knowledge produced by millions of studies over the last half century — and is <a href="https://thinklab.com/p/rephetio" title="Project Rephetio on Thinklab">applying it</a> to predict new uses for existing drugs. <em>Nature</em> <a href="https://doi.org/bndt" title="Legal confusion threatens to slow data science">covered</a> his data licensing struggles to make this resource publicly reusable. Daniel's purpose is to make science entirely open for geeks everywhere to enjoy.</p>
+</blockquote>
+<h2>Education</h2>
+<p>I'm currently a Postdoctoral Fellow in the Greene Lab at the University of Pennsylvania. Before, I received my PhD in Biological &amp; Medical Informatics at the University of California, San Francisco. As an undergraduate, I majored in biostatistics at Cornell University and researched at Princeton University and Dartmouth Medical School over the summer.</p>
+  </div>
+</main>
+
+  
+</div>
+
+<script src="/lib/jquery-3.1.0.min.js"></script>
+<script src="/lib/semantic.js"></script>
+<!-- <script src="/lib/components/dropdown.js"></script> -->
+
+
+<script>
+// From http://jsfiddle.net/hwc9sLb9/
+$(".launch.button").mouseenter(function() {
+  $(this).stop().animate({
+      width: '150px'
+    }, 300,
+    function() {
+      $(this).find('.text').show();
+    });
+}).mouseleave(function(event) {
+  $(this).find('.text').hide();
+  $(this).stop().animate({
+    width: '70px'
+  }, 300);
+});
+$(".ui.sidebar").sidebar().sidebar('attach events', '.ui.launch.button');
+</script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.dhimmel.com"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://piwik.dhimmel.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://piwik.dhimmel.com/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+
+</html>
