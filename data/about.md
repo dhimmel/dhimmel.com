@@ -11,3 +11,7 @@ Below is my biography for the 2016 Philly Geek Awards, where I [was a finalist](
 ## Education
 
 I'm currently a Postdoctoral Fellow in the [Greene Lab](http://www.greenelab.com "Casey Greene Lab at Penn") at the University of Pennsylvania. Before, I received my PhD in _Biological & Medical Informatics_ at the University of California, San Francisco in the [Baranzini Lab](http://baranzinilab.ucsf.edu "Sergio Baranzini Lab at UCSF"). As an undergraduate, I majored in biostatistics at Cornell University and researched at Princeton University and Dartmouth Medical School over the summer.
+
+## Contact
+
+My email is `daniel.himmelstein@gmail.com`. For easy encryption of your message (optional), [see KeyBase](https://keybase.io/encrypt#dhimmel "PGP encrypt message to dhimmel on KeyBase"). For support questions or feedback on my research, please first consider public venues — such as GitHub Issues — before emailing me.
