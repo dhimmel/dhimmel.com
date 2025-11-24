@@ -23,6 +23,8 @@
     /* The track itself doesn't rotate, the cards do relative to a center point */
     user-select: none;
     -webkit-user-select: none;
+    /* Allow clicks to pass through to cards behind the plane */
+    pointer-events: none;
 }
 
 .project-card {
@@ -46,9 +48,8 @@
 
     /* Default state (hidden/inactive) */
     opacity: 0;
-    pointer-events: none;
-    /* Only active card should be clickable initially */
-
+    /* Explicitly enable clicks on cards */
+    pointer-events: auto;
     display: flex;
     flex-direction: column;
     overflow: hidden;
