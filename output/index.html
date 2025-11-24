@@ -56,12 +56,16 @@
 
     <section id="portfolio">
       <h2>Portfolio</h2>
-      <div class="carousel-container">
-        <div class="carousel-track">
+      <div class="carousel-scene">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Cards will be populated/managed by JS, but keeping structure for now -->
 
           <!-- Project 1 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #4a148c, #880e4f);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #4a148c, #880e4f);"></div>
+              <div class="card-title-overlay">AI & Automation in Radiology</div>
+            </div>
             <div class="project-info">
               <h3>AI & Automation in Radiology</h3>
               <p class="project-year">2025</p>
@@ -71,7 +75,10 @@
 
           <!-- Project 2 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #1a237e, #006064);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #1a237e, #006064);"></div>
+              <div class="card-title-overlay">Software</div>
+            </div>
             <div class="project-info">
               <h3>Software</h3>
               <p class="project-year">Ongoing</p>
@@ -81,7 +88,10 @@
 
           <!-- Project 3 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #004d40, #00695c);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #004d40, #00695c);"></div>
+              <div class="card-title-overlay">Open Manuscripts</div>
+            </div>
             <div class="project-info">
               <h3>Open Manuscripts</h3>
               <p class="project-year">2019</p>
@@ -91,7 +101,10 @@
 
           <!-- Project 4 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #311b92, #4527a0);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #311b92, #4527a0);"></div>
+              <div class="card-title-overlay">Collaborative Science</div>
+            </div>
             <div class="project-info">
               <h3>Collaborative Science</h3>
               <p class="project-year">2015-2018</p>
@@ -101,7 +114,10 @@
 
           <!-- Project 5 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #bf360c, #d84315);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #bf360c, #d84315);"></div>
+              <div class="card-title-overlay">Ontologies</div>
+            </div>
             <div class="project-info">
               <h3>Ontologies</h3>
               <p class="project-year">2020-2025</p>
@@ -111,7 +127,10 @@
 
           <!-- Project 6 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #880e4f, #ad1457);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #880e4f, #ad1457);"></div>
+              <div class="card-title-overlay">Bibliometrics</div>
+            </div>
             <div class="project-info">
               <h3>Bibliometrics</h3>
               <p class="project-year">2016-2018</p>
@@ -121,7 +140,10 @@
 
           <!-- Project 7 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #1b5e20, #2e7d32);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #1b5e20, #2e7d32);"></div>
+              <div class="card-title-overlay">Target-Disease Discovery</div>
+            </div>
             <div class="project-info">
               <h3>Target-Disease Discovery</h3>
               <p class="project-year">2020-2025</p>
@@ -131,7 +153,10 @@
 
           <!-- Project 8 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #0d47a1, #1565c0);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #0d47a1, #1565c0);"></div>
+              <div class="card-title-overlay">Drug Repurposing</div>
+            </div>
             <div class="project-info">
               <h3>Drug Repurposing</h3>
               <p class="project-year">2016-2017</p>
@@ -141,7 +166,10 @@
 
           <!-- Project 9 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #263238, #37474f);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #263238, #37474f);"></div>
+              <div class="card-title-overlay">Knowledge Graphs</div>
+            </div>
             <div class="project-info">
               <h3>Knowledge Graphs</h3>
               <p class="project-year">2015-2023</p>
@@ -151,7 +179,10 @@
 
           <!-- Project 10 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #263238, #37474f);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #263238, #37474f);"></div>
+              <div class="card-title-overlay">Graph algorithms</div>
+            </div>
             <div class="project-info">
               <h3>Graph algorithms</h3>
               <p class="project-year">2015-2023</p>
@@ -163,7 +194,10 @@
 
           <!-- Project 11 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #3e2723, #4e342e);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #3e2723, #4e342e);"></div>
+              <div class="card-title-overlay">DeSci</div>
+            </div>
             <div class="project-info">
               <h3>DeSci</h3>
               <p class="project-year">2015-2019</p>
@@ -173,7 +207,10 @@
 
           <!-- Project 12 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #006064, #00838f);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #006064, #00838f);"></div>
+              <div class="card-title-overlay">OpenStreetMap & GIS</div>
+            </div>
             <div class="project-info">
               <h3>OpenStreetMap & GIS</h3>
               <p class="project-year">Ongoing</p>
@@ -183,7 +220,10 @@
 
           <!-- Project 13 -->
           <div class="project-card">
-            <div class="project-thumb" style="background: linear-gradient(45deg, #b71c1c, #c62828);"></div>
+            <div class="card-visual">
+              <div class="project-thumb" style="background: linear-gradient(45deg, #b71c1c, #c62828);"></div>
+              <div class="card-title-overlay">Elevation & Lung Cancer</div>
+            </div>
             <div class="project-info">
               <h3>Elevation & Lung Cancer</h3>
               <p class="project-year">2012-2015</p>
@@ -191,11 +231,6 @@
             </div>
           </div>
 
-        </div>
-
-        <div class="carousel-nav">
-          <button class="carousel-btn carousel-prev" aria-label="Previous">&larr;</button>
-          <button class="carousel-btn carousel-next" aria-label="Next">&rarr;</button>
         </div>
       </div>
     </section>
@@ -331,6 +366,8 @@
     <p><img src="https://piwik.dhimmel.com/piwik.php?idsite=2" style="border:0;" alt="" /></p>
   </noscript>
   <!-- End Piwik Code -->
+  <link rel="stylesheet" href="/css/carousel.css">
+  <script src="/js/carousel.js" defer></script>
   <script src="/js/main.js"></script>
 
 </body>
