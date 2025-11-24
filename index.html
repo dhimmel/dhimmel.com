@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Himmelstein · Digital Craftsman · Home</title>
-  <meta name="description"
-    content="Digital craftsman of the biodata revolution. Daniel Himmelstein is a data scientist and software engineer focused on open science and human disease.">
+  <meta name="description" content="Digital craftsman of the biodata revolution. Daniel Himmelstein is a data scientist and software engineer focused on open science and human disease.">
   <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,20 +41,20 @@
       <h2>About Me</h2>
       <div class="about-content">
         <p>
-          My work focuses on understanding human disease through data science, amazing software, and open collaborative
-          approaches for the digital age.
+          My work focuses on understanding human disease through data science, amazing software, and open collaborative approaches for the digital age.
         </p>
         <br>
         <p>
-          I've recently turned my focus to radiology and artificial intelligence after an early career pioneering
-          knowledge graphs (hetnets), machine learning, drug repurposing, data science, blockchains, graph databases,
-          and open science.
+          I've recently turned my focus to radiology and artificial intelligence after an early career pioneering knowledge graphs (hetnets), machine learning, drug repurposing, data science, blockchains, graph databases, and open science.
         </p>
       </div>
     </section>
 
     <section id="portfolio">
       <h2>Portfolio</h2>
+    </section>
+    <!-- we place carousel-container outside of the portfolio section to avoid horizontal scrolling from being introduced on mobile -->
+    <div class="carousel-container">
       <div class="carousel-scene">
         <div class="carousel-track" id="carouselTrack">
           <!-- Cards will be populated/managed by JS, but keeping structure for now -->
@@ -63,8 +62,7 @@
           <!-- Project 0 -->
           <div class="project-card">
             <div class="card-visual">
-              <div class="project-thumb"
-                style="background: url('/image/cards/radoverlay-card.png') center/cover no-repeat;"></div>
+              <div class="project-thumb" style="background: url('/image/cards/radoverlay-card.png') center/cover no-repeat;"></div>
               <div class="card-title-overlay">AI & Automation in Radiology</div>
             </div>
             <div class="project-info">
@@ -77,8 +75,7 @@
           <!-- Project +1 -->
           <div class="project-card">
             <div class="card-visual">
-              <div class="project-thumb"
-                style="background: url('/image/cards/hetionet-card.png') center/cover no-repeat;"></div>
+              <div class="project-thumb" style="background: url('/image/cards/hetionet-card.png') center/cover no-repeat;"></div>
               <div class="card-title-overlay">Knowledge Graphs</div>
             </div>
             <div class="project-info">
@@ -91,8 +88,7 @@
           <!-- Project +2 -->
           <div class="project-card">
             <div class="card-visual">
-              <div class="project-thumb"
-                style="background: url('/image/cards/rephetio-card.png') center/cover no-repeat;">
+              <div class="project-thumb" style="background: url('/image/cards/rephetio-card.png') center/cover no-repeat;">
               </div>
               <div class="card-title-overlay">Drug Repurposing</div>
             </div>
@@ -106,15 +102,16 @@
           <!-- Project +3 -->
           <div class="project-card">
             <div class="card-visual">
-              <div class="project-thumb"
-                style="background: url('/image/cards/graph-algo-card.png') center/cover no-repeat;"></div>
+              <div class="project-thumb" style="background: url('/image/cards/graph-algo-card.png') center/cover no-repeat;"></div>
               <div class="card-title-overlay">Graph algorithms</div>
             </div>
             <div class="project-info">
               <h3>Graph algorithms</h3>
               <p class="project-year">2015-2023</p>
-              <p>Algorithms for quantifying graph connectivity between nodes in heterogeneous networks. Invented the
-                <em>degree-weighted path count</em> metric. Created Hetnet Connectivity Search.
+              <p>
+                Algorithms for quantifying graph connectivity between nodes in heterogeneous networks.
+                Invented the <em>degree-weighted path count</em> metric.
+                Created Hetnet Connectivity Search.
               </p>
             </div>
           </div>
@@ -200,8 +197,7 @@
           <!-- Project -3 -->
           <div class="project-card">
             <div class="card-visual">
-              <div class="project-thumb"
-                style="background: url('/image/cards/manubot-card.svg') center/cover no-repeat;"></div>
+              <div class="project-thumb" style="background: url('/image/cards/manubot-card.svg') center/cover no-repeat;"></div>
               <div class="card-title-overlay">Open Manuscripts</div>
             </div>
             <div class="project-info">
@@ -214,8 +210,7 @@
           <!-- Project -2 -->
           <div class="project-card">
             <div class="card-visual">
-              <div class="project-thumb"
-                style="background: url('/image/cards/elevcan-card.png') center/cover no-repeat;"></div>
+              <div class="project-thumb" style="background: url('/image/cards/elevcan-card.png') center/cover no-repeat;"></div>
               <div class="card-title-overlay">Elevation & Lung Cancer</div>
             </div>
             <div class="project-info">
@@ -228,8 +223,7 @@
           <!-- Project -1 -->
           <div class="project-card">
             <div class="card-visual">
-              <div class="project-thumb"
-                style="background: url('/image/cards/openskistats-card.png') center/cover no-repeat;"></div>
+              <div class="project-thumb" style="background: url('/image/cards/openskistats-card.png') center/cover no-repeat;"></div>
               <div class="card-title-overlay">OpenStreetMap & GIS</div>
             </div>
             <div class="project-info">
@@ -241,7 +235,7 @@
 
         </div>
       </div>
-    </section>
+    </div>
 
     <section id="experience">
       <h2>Experience</h2>
@@ -263,9 +257,9 @@
             <span class="timeline-date">2020 &ndash; 2025</span>
             <h3>Chief Data Scientist</h3>
             <h4>Related Sciences</h4>
-            <p>Helped lead the 5-person data team to create the Facets platform for prioritizing drug targets based on
-              large scale data
-              integration.</p>
+            <p>
+              Helped lead the 5-person data team to create the Facets platform for prioritizing drug targets based on large scale data integration.
+            </p>
           </div>
         </div>
 
@@ -324,9 +318,8 @@
       <h2>Contact</h2>
       <div class="about-content">
         <p>
-          My email is <a href="mailto:daniel.himmelstein@gmail.com">daniel.himmelstein@gmail.com</a>. For support
-          questions or feedback on my research, please first consider public venues — such as GitHub Issues — before
-          emailing me.
+          My email is <a href="mailto:daniel.himmelstein@gmail.com">daniel.himmelstein@gmail.com</a>.
+          For support questions or feedback on my research, please first consider public venues — such as GitHub Issues — before emailing me.
         </p>
       </div>
     </section>

@@ -21,8 +21,11 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
+  line-height: 1.6;
   overflow-x: hidden;
 }
+
+
 
 a {
   color: var(--secondary-color);
@@ -151,7 +154,11 @@ h2::after {
 .carousel-container {
   position: relative;
   overflow: hidden;
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
+  margin-top: -100px;
+  margin-bottom: -400px;
+  z-index: 10;
+  pointer-events: none;
 }
 
 .carousel-track {
@@ -362,7 +369,19 @@ footer {
   }
 
   .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
     display: none;
-    /* Simple hide for now, could add hamburger */
+  }
+
+  .nav-links a[href*="blog"] {
+    display: block;
+    margin-left: 0;
+  }
+
+  header {
+    position: relative;
   }
 }
