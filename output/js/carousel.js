@@ -39,10 +39,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('mouseup', handleDragEnd);
     window.addEventListener('touchend', handleDragEnd);
+    // Prevent sticky drag if mouse leaves window
+    window.addEventListener('mouseleave', handleDragEnd);
 
     // Click to Focus
     cards.forEach((card, index) => {
-        card.addEventListener('click', () => {
+        card.addEventListener('click', (e) => {
+            // Ignore click if it was a drag (moved more than 5px)
+            if (dragDistance > 5) {
+                e.preventDefault();
+                e.stopPropagation();
+                return;
+            }
+
             if (currentIndex !== index) {
                 targetIndex = index;
                 animateToIndex();
@@ -198,8 +207,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- Drag Handlers ---
+    let startX = 0;
+    let dragDistance = 0;
+
     function handleDragStart(e) {
         isDragging = true;
+        dragDistance = 0;
         // Use ClientX for horizontal drag
         startX = e.touches ? e.touches[0].clientX : e.clientX;
         startIndex = targetIndex;
@@ -208,28 +221,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleDragMove(e) {
         if (!isDragging) return;
-        e.preventDefault(); // Keep preventDefault for touch events to prevent scrolling
+        // Only prevent default if we are actually dragging horizontally to allow vertical scroll on mobile
+        // But for now, let's keep it simple and prevent default to stop native selection/drag
+        e.preventDefault();
+
         // Use ClientX
         const x = e.touches ? e.touches[0].clientX : e.clientX;
         const deltaX = x - startX;
+        dragDistance = Math.abs(deltaX);
 
         // Sensitivity: 100px = 1 card
-        // Dragging LEFT (negative delta) should move to NEXT card (increment index)
-        // Dragging RIGHT (positive delta) should move to PREV card (decrement index)
         const deltaIndex = -deltaX / 100;
         targetIndex = startIndex + deltaIndex;
 
-        // Animate immediately for responsiveness
         requestAnimationFrame(updateCarouselLoop);
     }
 
     function handleDragEnd() {
+        if (!isDragging) return;
         isDragging = false;
         track.style.cursor = 'grab';
+
         // Snap to nearest integer
         targetIndex = Math.round(targetIndex);
         animateToIndex();
+
+        // Reset drag distance after a short delay to allow click handler to check it
+        setTimeout(() => {
+            dragDistance = 0;
+        }, 50);
     }
+
+    // Prevent native drag of images/cards which causes "sticky" behavior
+    track.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+    });
 
     // Initial call
     animateToIndex();
