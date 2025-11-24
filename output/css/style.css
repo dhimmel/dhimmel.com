@@ -73,14 +73,14 @@ nav {
 
 /* Hero Section */
 .hero {
-  min-height: 60vh;
+  min-height: min-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
   background: radial-gradient(circle at 50% 50%, rgba(74, 20, 140, 0.2), transparent 70%);
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .hero-img {
@@ -97,12 +97,12 @@ nav {
 
 .hero-text {
   text-align: left;
-  max-width: 600px;
+  max-width: 100%;
 }
 
 .hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 0.5rem;
   background: linear-gradient(to right, #fff, #b39ddb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -116,7 +116,7 @@ nav {
 
 /* Sections */
 section {
-  padding: 6rem 2rem;
+  padding: 2rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -339,6 +339,7 @@ footer {
 
   .hero h1 {
     font-size: 2.5rem;
+    white-space: normal;
   }
 
   .timeline::before {
