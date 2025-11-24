@@ -18,5 +18,3 @@ Then visit <http://localhost:3001>.
 
 ## Known issues
 
-- horizontal scrolling on mobile chrome due to carousel but not on desktop chrome at small widths
-- remove sticky header on mobile to save space. Make sure blog link stays at top.
