@@ -9,8 +9,7 @@
     /* Adjust based on arch height */
     perspective: 2000px;
     /* Deep perspective for 3D effect */
-    overflow-x: hidden;
-    overflow-y: visible;
+    overflow: visible;
     display: flex;
     justify-content: center;
     align-items: center;
