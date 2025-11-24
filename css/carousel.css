@@ -1,0 +1,139 @@
+/* 3D Carousel Styles */
+
+.carousel-scene {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    /* Compensate for arch overflow */
+    /* Adjust based on arch height */
+    perspective: 2000px;
+    /* Deep perspective for 3D effect */
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* The track itself doesn't rotate, the cards do relative to a center point */
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.project-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    /* Center the card on its own origin for easier rotation */
+    margin-top: -200px;
+    margin-left: -150px;
+
+    background: var(--card-bg);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    /* 3D properties */
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.5s;
+
+    /* Default state (hidden/inactive) */
+    opacity: 0;
+    pointer-events: none;
+    /* Only active card should be clickable initially */
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Visual container for the card (thumb + overlay) */
+.card-visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Full height when unfocused */
+    transition: height 0.5s;
+}
+
+.project-thumb {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-title-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/* Info section - Hidden by default, shown on focus */
+.project-info {
+    padding: 1.5rem;
+    background: var(--card-bg);
+    flex-grow: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+    display: none;
+    /* Remove from flow when not focused to keep card size correct */
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.project-year {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Focus State --- */
+.project-card.focused {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 100 !important;
+    /* Ensure focused card is always on top */
+    border-color: var(--primary-color);
+    box-shadow: 0 0 40px rgba(124, 58, 237, 0.3);
+    /* Glow effect */
+}
+
+.project-card.focused .card-visual {
+    height: 200px;
+    /* Shrink visual to make room for text */
+}
+
+.project-card.focused .card-title-overlay {
+    opacity: 0;
+    /* Hide overlay title, show full info instead */
+}
+
+.project-card.focused .project-info {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Navigation Buttons (Optional, if we want them floating) --- */
+/* We can reuse existing buttons or add new ones overlaying the scene */
