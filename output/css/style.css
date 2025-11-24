@@ -226,7 +226,6 @@ blockquote {
   height: 24px;
   opacity: 0.8;
   transition: all 0.3s ease;
-  /* filter: invert(1); Removed as icons are already light */
 }
 
 .social-links a:hover {
