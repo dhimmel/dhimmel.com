@@ -302,6 +302,12 @@ h2::after {
   margin-bottom: 0.2rem;
 }
 
+.previous-role {
+  font-size: 0.85em;
+  color: #aaa;
+  font-weight: 400;
+}
+
 .timeline-content h4 {
   font-weight: 400;
   color: #aaa;
