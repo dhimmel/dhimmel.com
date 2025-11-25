@@ -163,6 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Only prevent default if we are actually dragging
         if (Math.abs(deltaX) > 5) {
             e.preventDefault();
+            track.classList.add('is-dragging');
         }
         dragDistance = Math.abs(deltaX);
 
@@ -177,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!isDragging) return;
         isDragging = false;
         track.style.cursor = 'grab';
+        track.classList.remove('is-dragging');
 
         // Snap to nearest integer
         targetIndex = Math.round(targetIndex);

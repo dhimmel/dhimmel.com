@@ -25,7 +25,38 @@ body {
   overflow-x: hidden;
 }
 
+/* Tooltip for Famed Region */
+.famed-tooltip {
+  border-bottom: 1px dashed var(--accent-color);
+  cursor: help;
+  position: relative;
+}
 
+.famed-tooltip:hover::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  background: var(--card-bg);
+  border: 1px solid var(--accent-color);
+  padding: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  font-size: 0.9rem;
+  color: #fff;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 a {
   color: var(--secondary-color);
@@ -290,6 +321,24 @@ h2::after {
   left: -10px;
 }
 
+.timeline-dot.current {
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(187, 134, 252, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(187, 134, 252, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(187, 134, 252, 0);
+  }
+}
+
 .timeline-date {
   font-weight: 700;
   color: var(--secondary-color);
@@ -300,6 +349,12 @@ h2::after {
 .timeline-content h3 {
   color: #fff;
   margin-bottom: 0.2rem;
+}
+
+.previous-role {
+  font-size: 0.85em;
+  color: #aaa;
+  font-weight: 400;
 }
 
 .timeline-content h4 {
@@ -322,6 +377,15 @@ footer {
   gap: 1.5rem;
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.5rem 1rem;
+  }
 }
 
 .social-links img {
