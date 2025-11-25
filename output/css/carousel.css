@@ -135,5 +135,59 @@
     transform: translateY(0);
 }
 
-/* --- Navigation Buttons (Optional, if we want them floating) --- */
-/* We can reuse existing buttons or add new ones overlaying the scene */
+/* --- No-JS Fallback --- */
+/* When JS is disabled, the 'no-js' class remains on body.
+   We override the 3D styles to show a simple grid. */
+
+body.no-js .carousel-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: auto;
+    overflow: visible;
+}
+
+body.no-js .carousel-scene {
+    height: auto;
+    perspective: none;
+    display: block;
+    padding: 2rem 0;
+}
+
+body.no-js .carousel-track {
+    transform-style: flat;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+    height: auto;
+}
+
+body.no-js .project-card {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    transform: none !important;
+    opacity: 1;
+    /* Show all cards */
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 400px;
+}
+
+body.no-js .project-card .card-visual {
+    height: 200px;
+    /* Always show visual as if focused/static */
+}
+
+body.no-js .project-card .card-title-overlay {
+    display: none;
+    /* Hide overlay, show full info */
+}
+
+body.no-js .project-card .project-info {
+    display: block;
+    opacity: 1;
+    transform: none;
+}
