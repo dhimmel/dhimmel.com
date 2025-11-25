@@ -324,6 +324,15 @@ footer {
   flex-wrap: wrap;
 }
 
+@media (max-width: 480px) {
+  .social-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1.5rem 1rem;
+  }
+}
+
 .social-links img {
   width: 24px;
   height: 24px;
