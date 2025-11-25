@@ -25,7 +25,38 @@ body {
   overflow-x: hidden;
 }
 
+/* Tooltip for Famed Region */
+.famed-tooltip {
+  border-bottom: 1px dashed var(--accent-color);
+  cursor: help;
+  position: relative;
+}
 
+.famed-tooltip:hover::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  background: var(--card-bg);
+  border: 1px solid var(--accent-color);
+  padding: 0.8rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  font-size: 0.9rem;
+  color: #fff;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 
 a {
   color: var(--secondary-color);
