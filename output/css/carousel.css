@@ -119,17 +119,17 @@
     /* Glow effect */
 }
 
-.project-card.focused .card-visual {
+.carousel-track:not(.is-dragging) .project-card.focused .card-visual {
     height: 200px;
     /* Shrink visual to make room for text */
 }
 
-.project-card.focused .card-title-overlay {
+.carousel-track:not(.is-dragging) .project-card.focused .card-title-overlay {
     opacity: 0;
     /* Hide overlay title, show full info instead */
 }
 
-.project-card.focused .project-info {
+.carousel-track:not(.is-dragging) .project-card.focused .project-info {
     display: block;
     opacity: 1;
     transform: translateY(0);
